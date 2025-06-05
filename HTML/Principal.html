@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/AgenciaViajes.css">
+    <link rel="shortcut icon" href="/IMAGENES/Avion.png" type="image/x-icon">
+    <title>ViaMundo</title>
+</head>
+<body>
+    <div class="contenido">
+        <header class="bg-primary d-flex justify-content-between align-items-center p-3">
+            <h1 class="text-white">ViaMundo.com</h1>
+            <nav class="nav">
+                <div class="Cont_nav">
+                    <button class="menu_movil" id="btn-menu">
+                        <div id="primero" class="linea"></div>
+                        <div id="segundo" class="linea"></div>
+                        <div id="tercero" class="linea"></div>
+                    </button>
+                    <div class="bg-primary nav-links" id="menu">
+                        <a href="Principal.html">Inicio</a>
+                        <a href="PaquetesTuristicos.html">Paquetes Turisticos</a>
+                        <a href="Nosotros.html">Sobre Nosotros</a>
+                        <a href="GaleriaImg.html">Recuerdos Inolvidables</a>
+                        <a href="FormularioContacto.html">Contactar</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h2 class="row justify-content-center mt-5 mb-3">¡Bienvenido a ViaMundo!</h2>
+            <p class="row col-md-8 m-auto mb-5">Tu aventura comienza aquí. En ViaMundo, te invitamos a descubrir un mundo lleno de posibilidades, donde cada destino tiene una historia por contar y cada viaje se convierte en una experiencia única.
+                Desde escapadas relajantes hasta aventuras emocionantes, te acompañamos en cada paso para que disfrutes sin preocupaciones.
+                Nuestro compromiso es brindarte atención personalizada, asesoramiento experto y los mejores paquetes turísticos adaptados a tus gustos y necesidades.
+                Con ViaMundo, no solo viajás… vivís momentos que se transforman en recuerdos inolvidables.</p>
+        </div>
+        <hr class="separador">
+        <main class="container">
+            <section class="row text-center justify-content-center">
+                <h3 class="titulo">Paquetes Recomendados</h3>
+                <h4></h4> <!--Para cargar el titulo de cada paquete, hay que hacer una funcion js-->
+                <div id="carouselPaquetesRecomendados" class="carousel slide col-md-10">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner shadow-lg rounded">
+                        <div class="carousel-item active">
+                            <a href="">
+                                <img src="/IMAGENES/Roma.jpg" class="d-block w-100 rounded" alt="roma">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block fw-bold">
+                            <h5>Roma, Italia</h5>
+                            <p>Conocida como la “Ciudad Eterna”, Roma ofrece una experiencia única con sus ruinas antiguas como el Coliseo, el Foro Romano y el Panteón. Además, es hogar del Vaticano, la Capilla Sixtina y una gastronomía que enamora.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="/IMAGENES/Dubai.jpg" class="d-block w-100 rounded" alt="dubai">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block fw-bold">
+                            <h5>Dubai, Emiratos Árabes Unidos</h5>
+                            <p>Espectacular y lujosa, Dubái se destaca por sus rascacielos como el Burj Khalifa, centros comerciales gigantescos, playas modernas y experiencias únicas como safaris por el desierto y hoteles de clase mundial.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="/IMAGENES/Londres.jpg" class="d-block w-100 rounded" alt="londres">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block fw-bold">
+                            <h5>Londres, Inglaterra</h5>
+                            <p>Capital multicultural con una rica historia reflejada en lugares como el Big Ben, la Torre de Londres y el Palacio de Buckingham. Ofrece museos gratuitos, parques hermosos, mercados variados y una vibrante vida urbana.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="/IMAGENES/Paris.jpg" class="d-block w-100 rounded" alt="paris">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block fw-bold">
+                            <h5>Paris, Francia</h5>
+                            <p>Ícono del romanticismo, París deslumbra con la Torre Eiffel, el Louvre, Notre Dame y sus encantadoras calles y cafés. Es ideal para los amantes del arte, la moda, la cultura y la cocina francesa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="/IMAGENES/Tokio.jpg" class="d-block w-100 rounded" alt="">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block fw-bold">
+                            <h5>Tokio, Japon</h5>
+                            <p>Una ciudad vibrante donde lo tradicional y lo futurista conviven. Desde templos antiguos como Senso-ji hasta barrios modernos como Shibuya y Akihabara, Tokio sorprende con su cultura, orden, tecnología y comida exquisita como el sushi y el ramen.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPaquetesRecomendados" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--Hacer de alguna manera que cuando estemos en "Version movil", aparezca un texto que indique el titulo del paquete"-->
+            </section>
+            <hr class="separador">
+            <section class="row text-center">
+                <h3 class="titulo">Promociones</h3>
+                <!--Paquetes en oferta-->
+                <!--Hacer que 5 paquetes esten en oferta-->
+                <div id="carouselPromociones" class="carousel slide col-md-6 mx-auto">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cards">
+                                <img src="/IMAGENES/Dubai.jpg" class="img-fluid" alt="">
+                                <div class="descripcion-card">
+                                    <p class="">7 Noches - Diciembre</p>
+                                    <h3>Dubai</h3>
+                                    <p class="">Incluye: Vuelo + Hotel</p>
+                                    <h5 class="d-block tachado">$3000 US</h5>
+                                    <h5 class="d-block">$2000 US</h5>
+                                </div>
+                                <a href="" class="btn-card">Ver mas</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cards">
+                                <img src="/IMAGENES/Tokio.jpg" class="img-fluid" alt="">
+                                <div class="descripcion-card">
+                                    <p class="">14 Noches - Julio</p>
+                                    <h3>Tokio</h3>
+                                    <p class="">Incluye: Vuelo + Hotel</p>
+                                    <h5 class="d-block tachado">$2500 US</h5>
+                                    <h5 class="d-block">$1800 US</h5>
+                                </div>
+                                <a href="" class="btn-card">Ver mas</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cards">
+                                <img src="/IMAGENES/Londres.jpg" class="img-fluid" alt="">
+                                <div class="descripcion-card">
+                                    <p class="">7 Noches - Enero</p>
+                                    <h3>Tokio</h3>
+                                    <p class="">Incluye: Vuelo + Hotel</p>
+                                    <h5 class="d-block tachado">$2300 US</h5>
+                                    <h5 class="d-block">$1600 US</h5>
+                                </div>
+                                <a href="" class="btn-card">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromociones" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPromociones" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <hr class="separador">
+            <section class="row text-center">
+                <h3 class="titulo">Preguntas Frecuentes</h3>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                ¿Cómo conseguir vuelos baratos en ViaMundo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Para conseguir vuelos baratos en ViaMundo, lo primero que tenés que hacer es registrarte desde el sitio con tu email o descargarte nuestra App para que te lleguen todas las alertas de vuelos baratos que mandamos. Además, también podés crearte alertas personalizadas que te avisen cuando el vuelo que querés comprar baja de precio.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                ¿Cuándo hay promociones aéreas en ViaMundo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Las promociones aéreas dependen de las agencias y aerolíneas. En ViaMundo estamos constantemente detectando las mejores promociones aéreas y enviándoselas a nuestros usuarios para que puedan aprovecharlas.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ¿Dónde comprar vuelos baratos en ViaMundo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Para comprar vuelos baratos en ViaMundo, podés hacer tu búsqueda desde ViaMundo, donde te saldrán los precios más baratos disponibles para viajar al destino que quieras y seleccionando en el vuelo, serás redirigido para hacer tu compra.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                ¿Cómo enterarse de las promociones aéreas de ViaMundo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Para enterarte de las mejores promociones, te sugerimos registrarte desde el sitio o descargarte la App para recibir las alertas de vuelos baratos que enviamos.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary">
+            <a class="text-white d-flex justify-content-center" href="https://www.instagram.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                stroke-linecap="round" stroke-linejoin="round" 
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <h4>Nuestro Instagram</h4>
+            </a>
+            <a class="text-white d-flex justify-content-center" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                stroke-linecap="round" stroke-linejoin="round" 
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <h4>Nuestro Facebook</h4>
+            </a>
+        </footer>
+    </div>
+    <script src="/JS/MenuDesplegable.js"></script>
+    <script src="/JS/js/bootstrap.bundle.min.js"></script>
+    <script src="/JS/carouselPromociones.js"></script>
+</body>
+</html>
