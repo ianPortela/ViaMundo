@@ -169,3 +169,15 @@ footer a:hover{
 footer a h4{
     margin-left: 8px;
 }
+
+/****************************************************/
+
+/*PaquetesTuristicos*/
+/*Main*/
+/*Seccion categoria-zona*/
+.categoria-zona {
+    padding: 10px;
+}
+.mas-vendido .card{
+    margin: 0;
+}
