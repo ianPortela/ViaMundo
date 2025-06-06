@@ -174,10 +174,14 @@ footer a h4{
 
 /*PaquetesTuristicos*/
 /*Main*/
+main h2 {
+    text-align: center;
+}
 /*Seccion categoria-zona*/
 .categoria-zona {
     padding: 10px;
 }
 .mas-vendido .card{
     margin: 0;
+    width: 100%;
 }
