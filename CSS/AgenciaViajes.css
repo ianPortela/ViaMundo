@@ -245,3 +245,14 @@ main h2 {
     background-color: rgb(0, 111, 229);
     text-align: center;
 }
+
+/********************************************/
+/*Galeria Imagenes*/
+/*Seccion Paisajes*/
+.carousel-item img{
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+/*Seccion Fotos en Familia*/
