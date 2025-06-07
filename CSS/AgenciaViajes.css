@@ -218,3 +218,30 @@ main h2 {
 .card-text {
     margin-bottom: 10px !important;
 }
+
+/***************************************************/
+/*main*/
+.sombra-externa {
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 25px;
+    box-shadow: 12px 8px 16px #0b61ff;
+}
+
+/*Seccion nuestra historia*/
+/*Seccion mision vision y valor*/
+.Valores div{
+    margin-top: 25px;
+}
+/*Seccion nuestro equipo*/
+.foto-empleado {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.etiqueta {
+    border: 3px solid rgb(92, 156, 245);
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgb(0, 111, 229);
+    text-align: center;
+}
