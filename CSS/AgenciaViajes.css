@@ -13,11 +13,16 @@
     margin: 40px auto;
 }
 
+.precio {
+    margin-top: 60px;
+}
+
 
 /*header*/
 header h1 {
     padding-left: 20px;
 }
+
 /*Menu Desplegable*/
 .menu_movil {
     display: flex;
@@ -102,55 +107,6 @@ header h1 {
 
 
 
-/*main*/
-/*Seccion paquetes turisticos recomendados*/
-/*Seccion Promociones*/
-.cards {
-    margin: 15px 0;
-    border-radius: 12px;
-    padding-bottom: 20px;
-}
-
-.cards img{
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.descripcion-card {
-    margin: 15px;
-}
-
-
-.btn-card{
-    width: 180px;
-    height: 40px;
-    margin: 0 auto;
-    padding: 5px;
-    color: white;
-    font-weight: 500;
-    background-color: rgba(60, 86, 255, 0.92);
-    text-decoration: none;
-    border-radius: 12px;
-    transition: 0.3s ease;
-}
-
-.btn-card:hover{
-    transform: scale(1.2);
-    transition: 0.4s ease;
-}
-
-.tachado {
-    color: darkslategray;
-    text-decoration: line-through;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 12px
-}
-
-
 /*footer*/
 footer {
     margin-top: 30px;
@@ -164,10 +120,48 @@ footer a{
     margin: 15px auto;
 }
 footer a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 footer a h4{
     margin-left: 8px;
+}
+
+
+
+/*main*/
+/*Seccion paquetes turisticos recomendados*/
+/*Seccion Promociones*/
+.cards {
+    margin: 15px 0;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+
+.cards img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-height: 300px !important;
+}
+
+.descripcion-card {
+    margin: 15px;
+}
+.btn{
+    transition: 0.4s ease;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.tachado {
+    color: darkslategray;
+    text-decoration: line-through;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 12px
 }
 
 /****************************************************/
@@ -176,18 +170,51 @@ footer a h4{
 main h2 {
     text-align: center;
 }
+
+
 /*Seccion categoria-zona*/
-.categoria-zona {
-    padding: 10px;
+.categoria {
+    border-radius: 10px;
 }
 
-.categoria-zona div{
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+.categoria img{
+    transition: 0.5s ease;
 }
+
+.categoria:hover img {
+    transform: scale(1.1);
+}
+
+
 
 /*Seccion mas vendidos*/
 .mas-vendido .card{
     margin: 0;
     width: 100%;
+    transition: 0.3s ease;
 }
+
+.mas-vendido .card:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px #6b6b6bdb;
+}
+
+
 /*Seccion Recomendaciones*/
+.recomendaciones .card {
+    border-radius: 40px;
+}
+
+.recomendaciones .card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+    transition: 0.4s ease;
+}
+
+.recomendaciones .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-text {
+    margin-bottom: 10px !important;
+}
