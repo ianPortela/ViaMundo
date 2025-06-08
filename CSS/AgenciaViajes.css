@@ -222,9 +222,10 @@ main h2 {
 /***************************************************/
 /*main*/
 .sombra-externa {
-    border: 1px solid rgb(185, 185, 185);
+    /*border: 1px solid rgb(185, 185, 185);*/
     border-radius: 25px;
-    box-shadow: 12px 8px 16px #0b61ff;
+    /*box-shadow: 12px 8px 16px #0b61ff;*/
+    box-shadow: 12px 8px 16px #00000027;
 }
 
 /*Seccion nuestra historia*/
@@ -254,5 +255,6 @@ main h2 {
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
+
 
 /*Seccion Fotos en Familia*/
