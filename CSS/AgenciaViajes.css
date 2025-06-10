@@ -1,4 +1,8 @@
 /*global*/
+* {
+    box-sizing: border-box;
+}
+
 .contenido {
     display: grid;
     min-height: 100dvh;
@@ -256,5 +260,31 @@ main h2 {
     object-fit: cover;
 }
 
-
 /*Seccion Fotos en Familia*/
+.column img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.row-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .column {
+        flex: 100%;
+    }
+}
