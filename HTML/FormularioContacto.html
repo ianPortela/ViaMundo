@@ -19,7 +19,7 @@
                         <div id="tercero" class="linea"></div>
                     </button>
                     <div class="bg-primary nav-links" id="menu">
-                        <a href="index.html">Inicio</a>
+                        <a href="../index.html">Inicio</a>
                         <a href="PaquetesTuristicos.html">Paquetes Turisticos</a>
                         <a href="Nosotros.html">Sobre Nosotros</a>
                         <a href="GaleriaImg.html">Recuerdos Inolvidables</a>
@@ -29,10 +29,87 @@
             </nav>
         </header>
         <main class="container">
-            <div class="cont-formulario w-100 h-100 sombra-externa my-4">
-                <form action="">
-                    formulario
+            <div class="cont-formulario m-auto sombra-externa my-4 p-3">
+                <form action="" class="p-3">
+                    <h3 class="titulo etiqueta col-8 mx-auto mb-4">Datos Pasajero</h3>
+                    <p class="mb-4 text-center">Por favor complete el formulario para realizar la compra de <span id="paquete-comprar">Paquete a comprar</span>.</p>
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <label for="nombre" class="col-12">Nombre(s)</label>
+                            <input id="nombre" name="apellido" type="text" class="col-md-11 campo-form">
+                        </div>
+                        <div class="col-6">
+                            <label for="apellido" class="col-12">Apellido(s)</label>
+                            <input id="apellido" name="apellido" type="text" class="col-md-11 campo-form">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <label for="dni">Tipo y numero de documento</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <select id="tipo-identificacion" class="form-select campo-form" aria-label="Default select example">
+                                        <option selected>Tipo Documento</option>
+                                        <option value="1">Dni</option>
+                                        <option value="2">Pasaporte</option>
+                                    </select>
+                                </div>
+                                <input id="dni" name="identificacion" type="text" class="col-6 campo-form">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex my-3">
+                            <div class="col-md-5 mx-2">
+                                <label for="fecha-nacimiento" class="col-12">Fecha de nacimiento</label>
+                                <input id="fecha-nacimiento" type="date" class="col-12 campo-form">
+                            </div>
+                            <div class="col-md-5 mx-2">
+                                <label for="sexo">Sexo</label>
+                                <div class="col-12">
+                                    <select id="sexo" name="genero" class="form-select campo-form" aria-label="Default select example">
+                                        <option selected>...</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Femenino</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <label for="nacionalidad" class="col-12">Nacionalidad</label>
+                            <input id="nacionalidad" type="text" class="col-11 col-md-6 campo-form">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="">
+                            <label for="pedidos">Aclaraciones o pedidos especiales</label>
+                            <textarea name="pedidos" id="pedidos" rows="6" cols="120" class="col-12 col-md-11 my-2"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="titulo etiqueta col-8 mx-auto mb-4">Datos Contacto</h3>
+                        <p class="mb-5 text-center">Por favor completa el formulario para poder enviarte un correo validando tu compra.</p>
+                        <div class="row">
+                            <div class="col-md-6 my-2">
+                                <label for="email" class="col-12">Email</label>
+                                <input id="email" name="email" type="email" class="col-11 col-md-12 campo-form">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <label for="email-repetido" class="col-12">Repetir email</label>
+                                <input id="email-repetido" name="email-repetido" type="email" class="col-11 col-md-12 campo-form">
+                            </div>
+                            <div class="col-12 my-2">
+                                <label for="telefono" class="col-12">Telefono</label>
+                                <input id="telefono" type="tel" class=" col-11 col-md-6 campo-form">
+                            </div>
+                        </div>
+                    </div>
                 </form>
+                <div class="d-flex justify-content-center my-4">
+                    <a href="" class="btn btn-primary w-25">
+                        Comprar
+                    </a>
+                </div>
             </div>
         </main>
         <footer class="bg-primary">

@@ -251,8 +251,28 @@ main h2 {
     text-align: center;
 }
 
+/*Sucursales*/
+.ubicacion {
+    display: flex;
+    img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-left: 25px;
+    }
+    p {
+        align-content: end;
+    }
+}
+
+.lista-sucursales li {
+    color: rgb(0, 111, 229);
+}
 /********************************************/
 /*Galeria Imagenes*/
+.accordion-button {
+    font-weight: 800;
+}
 /*Seccion Paisajes*/
 .carousel-item img{
     width: 100%;
@@ -286,5 +306,30 @@ main h2 {
 @media (max-width: 576px) {
     .column {
         flex: 100%;
+    }
+}
+
+/**********************************************/
+
+.campo-form {
+    min-height: 40px;
+    max-width: 555px;
+    margin-top: 8px;
+}
+
+.cont-formulario a{
+    height: 60px;
+    padding-top: 15px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.cont-formulario a:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+    #dni {
+        width: 250px;
     }
 }
